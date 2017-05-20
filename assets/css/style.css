@@ -1,0 +1,49 @@
+h1{ 
+	float: right;
+	font-size: 2em;  
+}
+
+body{ 
+	background-image: url('../images/star_wars_xwing.jpg');
+	background-size: cover; 
+}
+
+#yourcharacter { 
+	border: 1px hidden; 
+	border-color: #000000;  
+	width: 70%;
+	height: 165px;
+	margin-left: 1%; 
+} 
+ 
+ img{ 
+ 	display: block;
+ 	float: left;
+ 	margin-left: 10px;
+ 	position: relative; 
+ }
+.players:hover {
+	cursor: pointer;
+}
+p{ 
+	display: block;
+	font-size: 1.5em; 
+}
+
+#enemysection { 
+	border: 1px hidden;
+	border-color: #000000;  
+	width: 70%; 
+	height: 165px;
+	margin-left: 1%; 
+	
+} 
+
+#defendersection { 
+	border: 1px hidden;
+	border-color: #000000;  
+	width: 70%; 
+	height: 165px;
+	margin-left: 1%;
+	 
+} 
