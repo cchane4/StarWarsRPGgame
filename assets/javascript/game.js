@@ -68,5 +68,5 @@ $(document).ready(function(){
 	    $('#obi').html("Health: " + obi.health); // do this for all four variables and divs what you are doing is updating the values in the divs and displaying them 
 	});
 
-}; 
+}); 
 
