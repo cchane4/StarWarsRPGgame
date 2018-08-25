@@ -56,10 +56,10 @@ $(document).ready(function(){
   var renderOne = function(character, renderArea, charStatus) {
 
     // This block of code builds the character card, and renders it to the page.
-    var charDiv = $("<div class='character' data-name='" + character.name + "'>");
-    var charName = $("<div class='character-name'>").text(character.name);
-    var charImage = $("<img alt='image' class='character-image'>").attr("src", character.imageUrl);
-    var charHealth = $("<div class='character-health'>").text(character.health);
+    var charDiv = $("<div class='character' data-name='" + characters.name + "'>");
+    var charName = $("<div class='character-name'>").text(characters.name);
+    var charImage = $("<img alt='image' class='character-image'>").attr("src", characters.imageUrl);
+    var charHealth = $("<div class='character-health'>").text(characters.health);
     charDiv.append(charName).append(charImage).append(charHealth);
     $(renderArea).append(charDiv);
 
@@ -69,7 +69,7 @@ $(document).ready(function(){
     }
     else if (charStatus === "defender") {
       // Populate currDefender with the selected opponent's information.
-      currDefender = character;
+      currDefender = characters;
       $(charDiv).addClass("target-enemy");
     }
   };
